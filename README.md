@@ -8,3 +8,14 @@ It works.  It is not ideal but just experimental.  Just for starters:
 time as execution sweeps past
 * Obviously well known and better-solved ways at debouncing
 * Probably a well implemented framework for button and LED control overall, but this code solves brute force at the pin level
+
+## Real uses
+
+This is very quick, naive, straightforward code to run a switch matrix possibly with an associated LED matrix and do any kind of thing needed.
+
+It's very suboptimal.  But, it's stable, and **it's been easy to understand and modify quickly**, so I've found real-world use for it in:
+
+* Pushbutton Zoom video conferencing macro controller, sending keyboard shortcuts for Mic mute, Camera on/off, window positioning, etc.
+* MIDI controller automating Ableton Live Session view in multi-step, stateful ways.
+* Controlling a circuit-bent kids toy, "the jaminator", to push USB MIDI.  Interestingly "the jaminator" is built with two switch matricies identical in circuitry
+to the prototypes I designed my code around.  Drop-in solution.  Cool.
